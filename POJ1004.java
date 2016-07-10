@@ -1,3 +1,4 @@
+/*
 package momoko;
 import java.util.Scanner;
 
@@ -16,3 +17,57 @@ public class POJ1004 {
 		input.close();
 		}
 	}
+*/
+
+import java.util.Scanner;
+public class POJ1004 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int count = 0;
+		double total = 0.0;
+		while(count < 12) {
+			double balance = input.nextDouble();
+			total += balance;
+			count++;
+		}
+		double meanBalance = Math.round(total / count * 100d) / 100d;
+		System.out.println("$" + meanBalance);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
