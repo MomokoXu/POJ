@@ -1,3 +1,4 @@
+/*
 package momoko;
 import java.util.Scanner;
 public class POJ1003 {
@@ -25,3 +26,60 @@ public class POJ1003 {
 		scan.close();
 		}
 	}
+*/
+
+import java.util.Scanner;
+
+public class POJ1003 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		while(input.hasNext()) {
+			double num = input.nextDouble();
+			if(num == 0.0) break;
+			double total = 0.0;
+			int count = 0;
+			while (total < num) {
+				total += 1.0 / (count + 2);
+				count++;
+			}
+
+			System.out.println(count + " card(s)");
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
